@@ -1,0 +1,177 @@
+body {
+    background-color: aliceblue;
+    display: block;
+
+}
+
+.main {
+    border: 0px solid rgb(0, 0, 0);
+    height: 95vh;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    background-image: linear-gradient(rgb(255, 199, 199), rgb(160, 160, 255));
+    animation: mymove 4s linear infinite;
+    position: relative;
+}
+
+@keyframes mymove {
+    from {
+        background-image: #fbc9dc;
+    }
+
+    to {
+        background-image: #c2d4f9;
+    }
+}
+
+.col1 {
+    border: 0px solid black;
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 169px;
+    left: 66px;
+    overflow: hidden;
+    background-color: #E43D00;
+    animation: col1move 5s linear infinite;
+    opacity: 0.8;
+}
+
+@keyframes col1move {
+    from {
+        background-color: #d2cecd;
+    }
+
+    to {
+        background-color: rgb(31, 241, 171);
+    }
+}
+
+.col2 {
+    border: 0px solid black;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 150px;
+    left: 15px;
+    overflow: hidden;
+    background-color: #02AABD;
+    opacity: 0.6;
+}
+
+.col3 {
+    border: 0px solid black;
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: -30px;
+    left: 131px;
+    overflow: hidden;
+    background-color: #E4F3E3;
+    opacity: 0.7;
+}
+
+.col4 {
+    border: 0px solid black;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+    top: 20rem;
+    left: 1rem;
+    overflow: hidden;
+    background-color: #a8c5ff;
+    animation: co41move 5s infinite;
+    opacity: 0.8;
+    animation-name: col4ani;
+}
+
+@kayframes {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes co41move {
+    50% {}
+}
+
+.main2 {
+    position: absolute;
+    justify-content: right;
+    /* border: 1px solid rgb(178, 157, 198); */
+    border-radius: 10px;
+    height: 95vh;
+    width: 97.85vw;
+    opacity: 1;
+    top: 95vh;
+    background-image: linear-gradient(rgb(160, 160, 255), rgb(255, 199, 199));
+}
+
+.main2 .col3 {
+    border: 0px solid black;
+    border-radius: 50%;
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: -30px;
+    left: 30vw;
+    /* overflow: hidden; */
+    background-color: #dc96df;
+    opacity: 0.7;
+    /* transform: skew(30deg); */
+    animation: 8s infinite;
+    animation-name: c3m2;
+
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: red;
+    color: black;
+    border-radius: 5px;
+}
+
+@keyframes c3m2{
+    0% {background-image: radial-gradient(rgb(253, 253, 190));}
+    /* 20% {background-color: red;} */
+    40% {background-color: rgb(153, 217, 248);}
+    /* 60% {background-color: rgb(129, 201, 74);} */
+    80% {background-color: rgb(246, 191, 234);}
+    100% {background-color: rgb(231, 201, 169);}
+}
